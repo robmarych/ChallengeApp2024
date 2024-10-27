@@ -1,20 +1,33 @@
-﻿string name = "Ewa";
-int age = 30;
-bool  isWomen =false;  ///false kobieta ,truue 
+﻿
 
-if(isWomen && age < 30 )
+int number = 001122334455;
+string numberInStriong = number.ToString();
+char[] letteres = numberInStriong.ToCharArray();
+int[] counter = new int[9];
+for (int i = 0; i < counter.Length; i++)
 {
-    Console.WriteLine("Kobieta poniżej 30 lat");
+    counter[i] = 0;
 }
-else if (name == "Ewa" && age == 30 && isWomen)
+
+foreach (char letter in letteres)
 {
-    Console.WriteLine("Ewa ma 30 lat ");
+    {
+        for (int i = 0; i < counter.Length; i++)
+        {
+            if (Char.ConvertFromUtf32(letter) == i.ToString())
+            {
+                counter[i]++;
+            }
+        }
+    }
 }
-else if (!isWomen && age < 18)
+
+Console.WriteLine("Wynika dla liczy: " + number);
+for (int i = 0; i < counter.Length; i++)
 {
-    Console.WriteLine("Niepełnoletni mężczyzna ");
+    Console.WriteLine(i + " => " + counter[i]);
 }
-else
-{
-    Console.WriteLine("Nie spełnione jest warunke");
-}
+
+
+
+
