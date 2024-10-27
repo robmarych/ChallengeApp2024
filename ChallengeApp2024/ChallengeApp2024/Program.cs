@@ -1,6 +1,4 @@
-﻿
-
-int number = 001122334455;
+﻿int number = 4456;
 string numberInStriong = number.ToString();
 char[] letteres = numberInStriong.ToCharArray();
 int[] counter = new int[9];
@@ -22,7 +20,7 @@ foreach (char letter in letteres)
     }
 }
 
-Console.WriteLine("Wynika dla liczy: " + number);
+Console.WriteLine("Wynik dla liczy: " + number);
 for (int i = 0; i < counter.Length; i++)
 {
     Console.WriteLine(i + " => " + counter[i]);
