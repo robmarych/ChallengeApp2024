@@ -5,7 +5,7 @@ namespace ChallengeApp2024.Tests
         [Test]
         public void EmpoyeesAddGrade()
         {
-            // arrage
+            // arrenge
             Employee employee = new Employee("Robert", "Kowlskie", 52);
             employee.AddGrade(5);
             employee.AddGrade(6);
@@ -20,7 +20,7 @@ namespace ChallengeApp2024.Tests
         [Test]
         public void EmpoyeesAddGradeNegativ()
         {
-            // arrage
+            // arrenge
             Employee employee = new Employee("Karol", "Mowakowski", 40);
             employee.AddGrade(10);
             employee.AddGrade(2);
